@@ -5,7 +5,7 @@
 
 import React, { PureComponent } from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Switch
 } from 'react-router-dom';
@@ -40,7 +40,7 @@ class App extends PureComponent  {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter basename='/'>
 
       <div>
         <HeaderWithContext />
@@ -54,13 +54,12 @@ class App extends PureComponent  {
           <Route exact path='/signout' component={UserSignOut} /> 
           <PrivateRoute exact path='/authenticated' component={AuthWithContext} />
           <PrivateRoute exact path='/courses/:id/update' component={UpdateCourseWithContext} /> 
-          <Route exact path='/Project-10'><Redirect to='/' /></Route>
           <Route exact path='/forbidden' component={Forbidden} /> 
           <Route exact path='/error' component={UnhandledError} /> 
           <Route component= {NotFound} /> 
         </Switch>
       </div> 
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
