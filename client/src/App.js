@@ -40,7 +40,8 @@ class App extends PureComponent  {
 
   render() {
     return (
-      <BrowserRouter basename="/Project-10/" >
+      <BrowserRouter>
+
       <div>
         <HeaderWithContext />
         <Switch>
@@ -53,6 +54,7 @@ class App extends PureComponent  {
           <Route exact path='/signout' component={UserSignOut} /> 
           <PrivateRoute exact path='/authenticated' component={AuthWithContext} />
           <PrivateRoute exact path='/courses/:id/update' component={UpdateCourseWithContext} /> 
+          <Route exact path='/Project-10'><Redirect to='/' /></Route>
           <Route exact path='/forbidden' component={Forbidden} /> 
           <Route exact path='/error' component={UnhandledError} /> 
           <Route component= {NotFound} /> 
