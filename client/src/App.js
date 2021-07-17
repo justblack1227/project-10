@@ -1,8 +1,6 @@
 /* Treehouse FSJS Techdegree
  * Project 10 - Full Stack App
  * By Justin Black
- 
- Going for Exceeds Expectations but okay with meeting expecatations
  */
 
 import React, { PureComponent } from 'react';
