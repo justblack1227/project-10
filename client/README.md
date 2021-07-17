@@ -1,4 +1,4 @@
-#Project 10
+# Full Stack Course App
 
 With this project, this displays a Full Stack Course App that was made with React and a Rest API. 
 
@@ -16,7 +16,6 @@ With this project, this displays a Full Stack Course App that was made with Reac
 
 Justin Black
 
-Going for Exceeds expectations but ok with meeting ecpectations
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
