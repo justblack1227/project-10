@@ -40,7 +40,7 @@ class App extends PureComponent  {
 
   render() {
     return (
-      <BrowserRouter basename="/Project-10" >
+      <BrowserRouter basename="/Project-10/" >
       <div>
         <HeaderWithContext />
         <Switch>
