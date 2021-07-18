@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Full Stack JavaScript Techdegree v2 - REST API Project
 
@@ -36,3 +37,6 @@ npm start
 ```
 
 To test the Express server, browse to the URL [http://localhost:5000/](http://localhost:5000/).
+=======
+# project-10
+>>>>>>> c7708a9b0dbbcc7331d234ee13514e840d51763f
