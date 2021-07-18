@@ -5,7 +5,7 @@
 
 import React, { PureComponent } from 'react';
 import {
-  HashRouter,
+  BrowserRouter,
   Route,
   Switch
 } from 'react-router-dom';
@@ -40,7 +40,7 @@ class App extends PureComponent  {
 
   render() {
     return (
-      <HashRouter basename='/'>
+      <BrowserRouter>
 
       <div>
         <HeaderWithContext />
@@ -59,7 +59,7 @@ class App extends PureComponent  {
           <Route component= {NotFound} /> 
         </Switch>
       </div> 
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
