@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import ErrorsDisplay from './ErrorsDisplay.js';
 import { Link } from 'react-router-dom';
+import config from './config';
 
 export default class CourseDetail extends Component {
     constructor(props) {
@@ -21,7 +22,7 @@ export default class CourseDetail extends Component {
         /**
         * Fetches a specific course's data
         */
-        fetch(`http://localhost:5000/api/courses/${this.state.params.id}`)
+        fetch(`${config.apiBaseUrl}${this.state.params.id}`)
             .then( response => response.json())
             .then( responseData => {
                 this.setState({ 

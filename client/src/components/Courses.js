@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import config from './config';
 
 
 class Courses extends Component {
@@ -17,7 +18,7 @@ componentDidMount(){
     /**
     * Fetches All Course Data and Renders the HTML
     */
-    fetch(`http://localhost:5000/api/courses/`)
+    fetch(`${config.apiBaseUrl}/courses/`)
     .then( response => response.json())
     .then( responseData => {
       for (let i = 0; i < responseData.length; i++) {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ErrorsDisplay from './ErrorsDisplay.js';
+import config from './config';
 
 export default class UpdateCourse extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ export default class UpdateCourse extends Component {
           /**
           * Fetches course data that needs to be updated
           */
-          fetch(`http://localhost:5000/api/courses/${this.state.params.id}`)
+          fetch(`${config.apiBaseUrl}${this.state.params.id}`)
               .then( response => response.json())
               .then( responseData => {
                   this.setState({ 
