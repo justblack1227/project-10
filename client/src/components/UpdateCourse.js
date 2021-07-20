@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ErrorsDisplay from './ErrorsDisplay.js';
-import config from './config';
+import config from '../config';
 
 export default class UpdateCourse extends Component {
   constructor(props) {

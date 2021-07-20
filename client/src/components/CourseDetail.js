@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import ErrorsDisplay from './ErrorsDisplay.js';
 import { Link } from 'react-router-dom';
-import config from './config';
+import config from '../config';
 
 export default class CourseDetail extends Component {
     constructor(props) {
