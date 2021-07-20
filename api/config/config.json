@@ -1,7 +1,7 @@
 {
   "development": {
     "dialect": "sqlite",
-    "storage": "fsjstd-restapi.db"
+    "storage": "course&users.db"
   },
   "test": {
     "dialect": "sqlite",
@@ -9,6 +9,6 @@
   },
   "production": {
     "dialect": "sqlite",
-    "storage": "fsjstd-restapi.db"
+    "storage": "course&users.db"
   }
 }
