@@ -22,7 +22,7 @@ export default class CourseDetail extends Component {
         /**
         * Fetches a specific course's data
         */
-        fetch(`${config.apiBaseUrl}${this.state.params.id}`)
+        fetch(`${config.apiBaseUrl}/courses/${this.state.params.id}`)
             .then( response => response.json())
             .then( responseData => {
                 this.setState({ 

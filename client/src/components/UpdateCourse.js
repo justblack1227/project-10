@@ -24,7 +24,7 @@ export default class UpdateCourse extends Component {
           /**
           * Fetches course data that needs to be updated
           */
-          fetch(`${config.apiBaseUrl}${this.state.params.id}`)
+          fetch(`${config.apiBaseUrl}/courses/${this.state.params.id}`)
               .then( response => response.json())
               .then( responseData => {
                   this.setState({ 
