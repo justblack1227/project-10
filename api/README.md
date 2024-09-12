@@ -1,5 +1,5 @@
 
-# Full Stack JavaScript Techdegree v2 - REST API Project
+# Full Stack JavaScript v2 - REST API 
 
 ## Overview of the Provided Project Files
 
